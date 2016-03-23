@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @vital.date %>
+</p>
+
+<p>
+  <strong>Patient id:</strong>
+  <%= @vital.Patient_ID %>
+</p>
+
+<%= link_to 'Edit', edit_vital_path(@vital) %> |
+<%= link_to 'Back', vitals_path %>
