@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  date: 2016-03-23 04:07:22
-  Patient_ID: 1
+  date: 2016-04-13
+  Patient_ID: MyString
+  Vital_Value: MyString
 
 two:
-  date: 2016-03-23 04:07:22
-  Patient_ID: 1
+  date: 2016-04-13
+  Patient_ID: MyString
+  Vital_Value: MyString

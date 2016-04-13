@@ -1,8 +1,9 @@
 class CreateVitals < ActiveRecord::Migration
   def change
     create_table :vitals do |t|
-      t.datetime :date
-      t.integer :Patient_ID
+      t.date :date
+      t.string :Patient_ID
+      t.string :Vital_Value
 
       t.timestamps null: false
     end

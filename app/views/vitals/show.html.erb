@@ -10,5 +10,10 @@
   <%= @vital.Patient_ID %>
 </p>
 
+<p>
+  <strong>Vital value:</strong>
+  <%= @vital.Vital_Value %>
+</p>
+
 <%= link_to 'Edit', edit_vital_path(@vital) %> |
 <%= link_to 'Back', vitals_path %>
