@@ -18,9 +18,9 @@
                 <td><%= vital.date %></td>
                 <td><%= vital.Patient_ID %></td>
                 <td><%= vital.Vital_Value %></td>
-                <td><%= link_to 'Show', vital %></td>
-                <td><%= link_to 'Edit', edit_vital_path(vital) %></td>
-                <td><%= link_to 'Destroy', vital, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                <td><%= link_to 'Show', vital,class: 'btn btn-mini' %></td>
+                <td><%= link_to 'Edit', edit_vital_path(vital),class: 'btn btn-mini' %></td>
+                <td><%= link_to 'Destroy', vital, method: :delete,,class: 'btn btn-mini' ,data: { confirm: 'Are you sure?' } %></td>
               </tr>
             <% end %>
           </tbody>
