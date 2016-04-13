@@ -1,25 +1,53 @@
-<%= form_for(@vital) do |f| %>
-  <% if @vital.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@vital.errors.count, "error") %> prohibited this vital from being saved:</h2>
+<div class="row">
+  <%= form_for @vital, html: {class: 'form-horizontal'} do |f| %>
+    <% if @vital.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@vital.errors.count, "error") %> prohibited this vital from being saved:</h2>
 
-      <ul>
-      <% @vital.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+        <ul>
+        <% @vital.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="control-group">
+      <%= f.label :date,class:'control-lablel' %><br>
+      <div class ="controls">
+      <%= f.date_select :date %>
+      </div>
+    </div>
+  
+
+  
+  <div class="control-group">
+    <%= f.label "Vital-Type",class: 'control-label' %>
+    <div class ="controls">
+      <%= f.select(:vital_type,options_for_select([['Blood-Pressure','Blood-Pressure'],['Blood-Sugar','Blood-Sugar'],['Weight','Weight'],['Heartbeat','Heartbeat'],['BMI','BMI']]),{include_blank: true}) %>
+  </div>
+    </div>
+ 
+    <div class="control-group">
+      <%= f.label :Patient_ID,class:'control-lablel' %><br>
+      <div class ="controls">
+      <%= f.number_field :Patient_ID %>
+        </div>
+      </div>
+  
+      <div class="control-group">
+      <%= f.label :Vital_Value,class:'control-lablel' %><br>
+      <div class ="controls">
+      <%= f.integer :Vital_Value %>
+        </div>
+      </div>
+  
+  
+  
+    <div class="control-group">
+      <div class ="controls">
+      <%= f.submit 'Submit', class:'btn btn-default'%>
+        </div>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :date %><br>
-    <%= f.datetime_select :date %>
-  </div>
-  <div class="field">
-    <%= f.label :Patient_ID %><br>
-    <%= f.number_field :Patient_ID %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>

@@ -1,0 +1,2046 @@
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 04:02:09 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered .bundle/gems/railties-4.2.5.1/lib/rails/templates/rails/welcome/index.html.erb (1.2ms)
+Completed 200 OK in 16ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (9.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (8.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateVitals (20160323040722)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "vitals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "Patient_ID" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160323040722"]]
+  [1m[35m (7.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 04:09:51 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered .bundle/gems/railties-4.2.5.1/lib/rails/templates/rails/welcome/index.html.erb (1.3ms)
+Completed 200 OK in 15ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-03-23 04:10:06 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1221ms (Views: 1219.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.self-e2f3d38c5e640befd495d9125c342dc8faffd6ac63e3e0d14b2759866ac5c095.css?body=1" for 54.244.95.60 at 2016-03-23 04:10:08 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 54.244.95.60 at 2016-03-23 04:10:08 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vitals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.244.95.60 at 2016-03-23 04:10:08 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 54.244.95.60 at 2016-03-23 04:10:08 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 54.244.95.60 at 2016-03-23 04:10:08 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 54.244.95.60 at 2016-03-23 04:10:08 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vitals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.244.95.60 at 2016-03-23 04:10:08 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 54.244.95.60 at 2016-03-23 04:10:08 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/vitals/new" for 54.244.95.60 at 2016-03-23 04:10:14 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#new as HTML
+  Rendered vitals/_form.html.erb (19.8ms)
+  Rendered vitals/new.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 40ms (Views: 36.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/vitals" for 54.244.95.60 at 2016-03-23 04:10:41 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Trv9VCJ6Wof+s2IzQzm43Ydaus5cMcyZVe/cinGD6EWdytmIQDas3qz2h+4OMHRckK55MA58q8/eCNZxaiC52w==", "vital"=>{"date(1i)"=>"2016", "date(2i)"=>"3", "date(3i)"=>"23", "date(4i)"=>"04", "date(5i)"=>"10", "Patient_ID"=>"1"}, "commit"=>"Create Vital"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "vitals" ("Patient_ID", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["Patient_ID", 1], ["date", "2016-03-23 04:10:00.000000"], ["created_at", "2016-03-23 04:10:41.332247"], ["updated_at", "2016-03-23 04:10:41.332247"]]
+  [1m[36m (8.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://patient-portal-169537.nitrousapp.com:3000/vitals/1
+Completed 302 Found in 16ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/vitals/1" for 54.244.95.60 at 2016-03-23 04:10:41 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVital Load (0.2ms)[0m  SELECT  "vitals".* FROM "vitals" WHERE "vitals"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered vitals/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 12.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vitals/1/edit" for 54.244.95.60 at 2016-03-23 04:10:53 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVital Load (0.1ms)[0m  [1mSELECT  "vitals".* FROM "vitals" WHERE "vitals"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered vitals/_form.html.erb (3.1ms)
+  Rendered vitals/edit.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vitals/1" for 54.244.95.60 at 2016-03-23 04:11:00 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVital Load (0.1ms)[0m  SELECT  "vitals".* FROM "vitals" WHERE "vitals"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered vitals/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vitals/1/edit" for 54.244.95.60 at 2016-03-23 04:11:02 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVital Load (0.1ms)[0m  [1mSELECT  "vitals".* FROM "vitals" WHERE "vitals"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered vitals/_form.html.erb (2.9ms)
+  Rendered vitals/edit.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/vitals/1" for 54.244.95.60 at 2016-03-23 04:11:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LzD80NrHr0lElJreEaAXQHERATwf/AbyakelL4JmePf8QdgMuItZEBbRfwNcqdvBZuXCwk2xYaThoK/UmcUpaQ==", "vital"=>{"date(1i)"=>"2016", "date(2i)"=>"3", "date(3i)"=>"23", "date(4i)"=>"04", "date(5i)"=>"10", "Patient_ID"=>"1"}, "commit"=>"Update Vital", "id"=>"1"}
+  [1m[35mVital Load (0.1ms)[0m  SELECT  "vitals".* FROM "vitals" WHERE "vitals"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://patient-portal-169537.nitrousapp.com:3000/vitals/1
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/vitals/1" for 54.244.95.60 at 2016-03-23 04:11:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVital Load (0.1ms)[0m  [1mSELECT  "vitals".* FROM "vitals" WHERE "vitals"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered vitals/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vitals/1" for 54.244.95.60 at 2016-03-23 04:11:29 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVital Load (0.1ms)[0m  SELECT  "vitals".* FROM "vitals" WHERE "vitals"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered vitals/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-03-23 04:11:43 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vitals/1" for 54.244.95.60 at 2016-03-23 04:11:50 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVital Load (0.1ms)[0m  SELECT  "vitals".* FROM "vitals" WHERE "vitals"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered vitals/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vitals/1/edit" for 54.244.95.60 at 2016-03-23 04:11:52 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVital Load (0.1ms)[0m  [1mSELECT  "vitals".* FROM "vitals" WHERE "vitals"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered vitals/_form.html.erb (3.4ms)
+  Rendered vitals/edit.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vitals/new" for 54.244.95.60 at 2016-03-23 04:12:14 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#new as HTML
+  Rendered vitals/_form.html.erb (3.8ms)
+  Rendered vitals/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/vitals" for 54.244.95.60 at 2016-03-23 04:12:24 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UeAc30u+EAfWrz57l0q8ihi1QhD9Dqg280GJfsco/HmCkTgDKfLmXoTq26baQ3ALD0GB7q9Dz2B4poOF3Iut5w==", "vital"=>{"date(1i)"=>"2016", "date(2i)"=>"3", "date(3i)"=>"23", "date(4i)"=>"04", "date(5i)"=>"12", "Patient_ID"=>"2"}, "commit"=>"Create Vital"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "vitals" ("Patient_ID", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["Patient_ID", 2], ["date", "2016-03-23 04:12:00.000000"], ["created_at", "2016-03-23 04:12:24.416338"], ["updated_at", "2016-03-23 04:12:24.416338"]]
+  [1m[35m (7.3ms)[0m  commit transaction
+Redirected to http://patient-portal-169537.nitrousapp.com:3000/vitals/2
+Completed 302 Found in 13ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/vitals/2" for 54.244.95.60 at 2016-03-23 04:12:24 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mVital Load (0.1ms)[0m  [1mSELECT  "vitals".* FROM "vitals" WHERE "vitals"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered vitals/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-03-23 04:12:27 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.1ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-03-23 05:37:32 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.1ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 194ms (Views: 184.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-03-23 05:41:24 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.1ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 194ms (Views: 183.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-03-23 05:43:28 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.3ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-03-23 05:45:02 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 05:45:05 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vitals/2" for 54.244.95.60 at 2016-03-23 05:45:09 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mVital Load (0.2ms)[0m  SELECT  "vitals".* FROM "vitals" WHERE "vitals"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered vitals/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 12.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 05:45:10 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.1ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 05:45:11 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.4ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vitals/2" for 54.244.95.60 at 2016-03-23 05:45:18 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mVital Load (0.1ms)[0m  [1mSELECT  "vitals".* FROM "vitals" WHERE "vitals"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered vitals/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 05:45:19 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 05:48:56 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.1ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 05:48:59 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 05:48:59 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 05:49:00 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 05:49:01 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 05:49:01 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 05:49:02 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 05:50:16 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 05:51:20 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 05:51:21 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 05:51:22 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 05:51:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 05:51:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 05:54:02 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 361ms (Views: 351.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.244.95.60 at 2016-03-23 05:54:03 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.244.95.60 at 2016-03-23 05:54:03 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 05:54:04 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home/dashboard" for 54.244.95.60 at 2016-03-23 05:54:22 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/home/dashboard"):
+  .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  .bundle/gems/web-console-2.3.0/lib/web_console/middleware.rb:20:in `block in call'
+  .bundle/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `catch'
+  .bundle/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `call'
+  .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  .bundle/gems/railties-4.2.5.1/lib/rails/rack/logger.rb:38:in `call_app'
+  .bundle/gems/railties-4.2.5.1/lib/rails/rack/logger.rb:20:in `block in call'
+  .bundle/gems/activesupport-4.2.5.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  .bundle/gems/activesupport-4.2.5.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  .bundle/gems/activesupport-4.2.5.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  .bundle/gems/railties-4.2.5.1/lib/rails/rack/logger.rb:20:in `call'
+  .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  .bundle/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  .bundle/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  .bundle/gems/activesupport-4.2.5.1/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  .bundle/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/static.rb:116:in `call'
+  .bundle/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  .bundle/gems/railties-4.2.5.1/lib/rails/engine.rb:518:in `call'
+  .bundle/gems/railties-4.2.5.1/lib/rails/application.rb:165:in `call'
+  .bundle/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  .bundle/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  .bundle/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/opt/rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/opt/rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/opt/rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.9ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (45.6ms)
+
+
+Started GET "/home" for 54.244.95.60 at 2016-03-23 05:54:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/home"):
+  .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  .bundle/gems/web-console-2.3.0/lib/web_console/middleware.rb:20:in `block in call'
+  .bundle/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `catch'
+  .bundle/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `call'
+  .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  .bundle/gems/railties-4.2.5.1/lib/rails/rack/logger.rb:38:in `call_app'
+  .bundle/gems/railties-4.2.5.1/lib/rails/rack/logger.rb:20:in `block in call'
+  .bundle/gems/activesupport-4.2.5.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  .bundle/gems/activesupport-4.2.5.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+  .bundle/gems/activesupport-4.2.5.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+  .bundle/gems/railties-4.2.5.1/lib/rails/rack/logger.rb:20:in `call'
+  .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  .bundle/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  .bundle/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  .bundle/gems/activesupport-4.2.5.1/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  .bundle/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/static.rb:116:in `call'
+  .bundle/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  .bundle/gems/railties-4.2.5.1/lib/rails/engine.rb:518:in `call'
+  .bundle/gems/railties-4.2.5.1/lib/rails/application.rb:165:in `call'
+  .bundle/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  .bundle/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  .bundle/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/opt/rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/opt/rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/opt/rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.1ms)
+
+
+Started GET "/welcome/home" for 54.244.95.60 at 2016-03-23 05:55:37 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 204ms (Views: 195.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:06:55 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.1ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 208ms (Views: 198.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/welcome/dashboard" for 54.244.95.60 at 2016-03-23 06:07:00 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#dashboard as HTML
+  Rendered welcome/dashboard.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/reports" for 54.244.95.60 at 2016-03-23 06:07:03 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#reports as HTML
+  Rendered welcome/reports.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/billing" for 54.244.95.60 at 2016-03-23 06:07:04 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#billing as HTML
+  Rendered welcome/billing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/vitals" for 54.244.95.60 at 2016-03-23 06:07:05 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#vitals as HTML
+  Rendered welcome/vitals.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:07:07 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/welcome/vitals" for 54.244.95.60 at 2016-03-23 06:08:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#vitals as HTML
+  Rendered welcome/vitals.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:08:59 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:11:06 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-03-23 06:11:10 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:11:12 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/welcome/dashboard" for 54.244.95.60 at 2016-03-23 06:11:13 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#dashboard as HTML
+  Rendered welcome/dashboard.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/reports" for 54.244.95.60 at 2016-03-23 06:11:14 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#reports as HTML
+  Rendered welcome/reports.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 31ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/billing" for 54.244.95.60 at 2016-03-23 06:11:15 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#billing as HTML
+  Rendered welcome/billing.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/vitals" for 54.244.95.60 at 2016-03-23 06:11:17 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#vitals as HTML
+  Rendered welcome/vitals.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:11:19 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/welcome/dashboard" for 54.244.95.60 at 2016-03-23 06:11:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#dashboard as HTML
+  Rendered welcome/dashboard.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/reports" for 54.244.95.60 at 2016-03-23 06:11:24 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#reports as HTML
+  Rendered welcome/reports.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/billing" for 54.244.95.60 at 2016-03-23 06:11:25 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#billing as HTML
+  Rendered welcome/billing.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-03-23 06:11:26 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/welcome/vitals" for 54.244.95.60 at 2016-03-23 06:11:27 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#vitals as HTML
+  Rendered welcome/vitals.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:11:29 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:13:04 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.3ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 49ms (Views: 42.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:13:13 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:13:13 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.1ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/welcome/dashboard" for 54.244.95.60 at 2016-03-23 06:13:13 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#dashboard as HTML
+  Rendered welcome/dashboard.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/reports" for 54.244.95.60 at 2016-03-23 06:13:15 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#reports as HTML
+  Rendered welcome/reports.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/billing" for 54.244.95.60 at 2016-03-23 06:13:16 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#billing as HTML
+  Rendered welcome/billing.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-03-23 06:13:16 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/welcome/vitals" for 54.244.95.60 at 2016-03-23 06:13:17 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#vitals as HTML
+  Rendered welcome/vitals.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:13:19 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:14:12 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/dashboard" for 54.244.95.60 at 2016-03-23 06:14:20 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#dashboard as HTML
+  Rendered welcome/dashboard.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/reports" for 54.244.95.60 at 2016-03-23 06:14:21 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#reports as HTML
+  Rendered welcome/reports.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/billing" for 54.244.95.60 at 2016-03-23 06:14:22 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#billing as HTML
+  Rendered welcome/billing.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-03-23 06:14:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.3ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:14:26 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/dashboard" for 54.244.95.60 at 2016-03-23 06:14:55 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#dashboard as HTML
+  Rendered welcome/dashboard.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/reports" for 54.244.95.60 at 2016-03-23 06:14:56 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#reports as HTML
+  Rendered welcome/reports.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/billing" for 54.244.95.60 at 2016-03-23 06:14:56 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#billing as HTML
+  Rendered welcome/billing.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-03-23 06:14:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:15:00 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:45:58 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 2347ms (Views: 2338.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-06847503fad0eb9e42b509018e31578f6ce9e8f80dfb9dfa6164856e8b1aa760.css?body=1" for 54.244.95.60 at 2016-03-23 06:46:02 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:46:16 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 57ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/dashboard" for 54.244.95.60 at 2016-03-23 06:46:17 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#dashboard as HTML
+  Rendered welcome/dashboard.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/reports" for 54.244.95.60 at 2016-03-23 06:46:19 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#reports as HTML
+  Rendered welcome/reports.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/billing" for 54.244.95.60 at 2016-03-23 06:46:21 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#billing as HTML
+  Rendered welcome/billing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-03-23 06:46:22 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:46:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:49:43 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:49:52 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:49:54 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/dashboard" for 54.244.95.60 at 2016-03-23 06:49:55 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#dashboard as HTML
+  Rendered welcome/dashboard.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/reports" for 54.244.95.60 at 2016-03-23 06:49:56 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#reports as HTML
+  Rendered welcome/reports.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/billing" for 54.244.95.60 at 2016-03-23 06:49:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#billing as HTML
+  Rendered welcome/billing.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-03-23 06:49:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/welcome/vitals" for 54.244.95.60 at 2016-03-23 06:49:59 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#vitals as HTML
+  Rendered welcome/vitals.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:50:01 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-03-23 06:51:22 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 216ms (Views: 215.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-transition.self-1f404046c677611b4c53fe8c7fa375d263aee3a2e3ffd10b6de609ce1fbb14ba.js?body=1" for 54.244.95.60 at 2016-03-23 06:51:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-alert.self-6fd0b0097e1b5d807a9e59c8914e00f1c80d64b6f5f5ad8f5c8f4bd5257d1233.js?body=1" for 54.244.95.60 at 2016-03-23 06:51:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-affix.self-fc2adbfd50a5e179d9c5978e92781e874d5629a6e86a14352eca21e8f35bd2c7.js?body=1" for 54.244.95.60 at 2016-03-23 06:51:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-carousel.self-a2a874da9eec4567e474650e78025b2557ca25bfe3c9823bf4f8bfadb8d1b870.js?body=1" for 54.244.95.60 at 2016-03-23 06:51:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-button.self-ec411ad9c9efa6f321b7d40f49ded5349beeb3d162fa38da764d243b33256cce.js?body=1" for 54.244.95.60 at 2016-03-23 06:51:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-collapse.self-743f780936abb3ae4b4afb385273dd40a091a71f8b869e96427ed340ddc49fb5.js?body=1" for 54.244.95.60 at 2016-03-23 06:51:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-dropdown.self-1ed8d6c365f72e9d378331aeb03097eea0bf443bb4e18b4bd551e3a04e1bbc82.js?body=1" for 54.244.95.60 at 2016-03-23 06:51:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-modal.self-31563e9d22c6c441c4bd6d53381d89710560a9b96356df8f2413198633d61b2b.js?body=1" for 54.244.95.60 at 2016-03-23 06:51:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-scrollspy.self-d7e7f43bd32db50108215b2da1b78229443295e36ed5e560901dac95a9aa0b2d.js?body=1" for 54.244.95.60 at 2016-03-23 06:51:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-tab.self-14b70f6c51272602f1c58e8b0fd4783c2123d72db8de2b0aa298e7789617130e.js?body=1" for 54.244.95.60 at 2016-03-23 06:51:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-tooltip.self-4372bd57b77c95c5ae140f68af0454eba315e71e9da19cfad68ba59007280645.js?body=1" for 54.244.95.60 at 2016-03-23 06:51:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-popover.self-d7bc00218b830918f1d254a9b7a83155f0850728d6eca92ad2cad148136b556c.js?body=1" for 54.244.95.60 at 2016-03-23 06:51:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-typeahead.self-886a9d8ef78798bccff815f846e02a82df9846e3cc3d3383f98705df4e404357.js?body=1" for 54.244.95.60 at 2016-03-23 06:51:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 54.244.95.60 at 2016-03-23 06:51:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 54.244.95.60 at 2016-03-23 06:51:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-04 16:02:29 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 423ms (Views: 414.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-06847503fad0eb9e42b509018e31578f6ce9e8f80dfb9dfa6164856e8b1aa760.css?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-transition.self-1f404046c677611b4c53fe8c7fa375d263aee3a2e3ffd10b6de609ce1fbb14ba.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-affix.self-fc2adbfd50a5e179d9c5978e92781e874d5629a6e86a14352eca21e8f35bd2c7.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-alert.self-6fd0b0097e1b5d807a9e59c8914e00f1c80d64b6f5f5ad8f5c8f4bd5257d1233.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-button.self-ec411ad9c9efa6f321b7d40f49ded5349beeb3d162fa38da764d243b33256cce.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-carousel.self-a2a874da9eec4567e474650e78025b2557ca25bfe3c9823bf4f8bfadb8d1b870.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-collapse.self-743f780936abb3ae4b4afb385273dd40a091a71f8b869e96427ed340ddc49fb5.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-dropdown.self-1ed8d6c365f72e9d378331aeb03097eea0bf443bb4e18b4bd551e3a04e1bbc82.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-modal.self-31563e9d22c6c441c4bd6d53381d89710560a9b96356df8f2413198633d61b2b.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-scrollspy.self-d7e7f43bd32db50108215b2da1b78229443295e36ed5e560901dac95a9aa0b2d.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-tab.self-14b70f6c51272602f1c58e8b0fd4783c2123d72db8de2b0aa298e7789617130e.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-tooltip.self-4372bd57b77c95c5ae140f68af0454eba315e71e9da19cfad68ba59007280645.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-popover.self-d7bc00218b830918f1d254a9b7a83155f0850728d6eca92ad2cad148136b556c.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-typeahead.self-886a9d8ef78798bccff815f846e02a82df9846e3cc3d3383f98705df4e404357.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vitals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 54.244.95.60 at 2016-04-04 16:02:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/welcome/dashboard" for 54.244.95.60 at 2016-04-04 16:02:33 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#dashboard as HTML
+  Rendered welcome/dashboard.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 43ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/reports" for 54.244.95.60 at 2016-04-04 16:02:33 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#reports as HTML
+  Rendered welcome/reports.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/billing" for 54.244.95.60 at 2016-04-04 16:02:34 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#billing as HTML
+  Rendered welcome/billing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-04 16:02:35 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (44.1ms)
+Completed 200 OK in 97ms (Views: 94.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/welcome/vitals" for 54.244.95.60 at 2016-04-04 16:02:37 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#vitals as HTML
+  Rendered welcome/vitals.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-04 16:02:38 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-04 16:07:36 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 265ms (Views: 256.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-04 16:08:36 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 255ms (Views: 246.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-04 16:08:39 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vitals/1" for 54.244.95.60 at 2016-04-04 16:08:46 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT  "vitals".* FROM "vitals" WHERE "vitals"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered vitals/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 85ms (Views: 73.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-05 20:08:47 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 651ms (Views: 630.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-06847503fad0eb9e42b509018e31578f6ce9e8f80dfb9dfa6164856e8b1aa760.css?body=1" for 54.244.95.60 at 2016-04-05 20:08:48 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 54.244.95.60 at 2016-04-05 20:08:48 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.244.95.60 at 2016-04-05 20:08:48 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vitals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.244.95.60 at 2016-04-05 20:08:48 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 54.244.95.60 at 2016-04-05 20:08:48 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/welcome/dashboard" for 54.244.95.60 at 2016-04-05 20:08:51 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#dashboard as HTML
+  Rendered welcome/dashboard.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 171ms (Views: 170.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/reports" for 54.244.95.60 at 2016-04-05 20:08:53 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#reports as HTML
+  Rendered welcome/reports.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 81ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/billing" for 54.244.95.60 at 2016-04-05 20:08:54 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#billing as HTML
+  Rendered welcome/billing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 20:08:55 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 97ms (Views: 94.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/welcome/vitals" for 54.244.95.60 at 2016-04-05 20:08:55 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#vitals as HTML
+  Rendered welcome/vitals.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 105ms (Views: 103.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-05 20:08:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 98ms (Views: 97.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/dashboard" for 54.244.95.60 at 2016-04-05 20:09:01 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#dashboard as HTML
+  Rendered welcome/dashboard.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 92ms (Views: 91.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/reports" for 54.244.95.60 at 2016-04-05 20:09:02 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#reports as HTML
+  Rendered welcome/reports.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 92ms (Views: 91.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/reports" for 54.244.95.60 at 2016-04-05 20:09:02 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#reports as HTML
+  Rendered welcome/reports.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 71ms (Views: 70.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/billing" for 54.244.95.60 at 2016-04-05 20:09:03 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#billing as HTML
+  Rendered welcome/billing.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 113ms (Views: 112.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 20:09:04 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 87ms (Views: 86.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/welcome/vitals" for 54.244.95.60 at 2016-04-05 20:09:04 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#vitals as HTML
+  Rendered welcome/vitals.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 77ms (Views: 76.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-05 20:09:06 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 92ms (Views: 91.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-05 20:09:49 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 106ms (Views: 105.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/dashboard" for 54.244.95.60 at 2016-04-05 20:09:51 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#dashboard as HTML
+  Rendered welcome/dashboard.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 91ms (Views: 90.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-05 20:09:53 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 78ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/dashboard" for 54.244.95.60 at 2016-04-05 20:09:54 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#dashboard as HTML
+  Rendered welcome/dashboard.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 86ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/reports" for 54.244.95.60 at 2016-04-05 20:09:55 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#reports as HTML
+  Rendered welcome/reports.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 88ms (Views: 87.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/billing" for 54.244.95.60 at 2016-04-05 20:09:56 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#billing as HTML
+  Rendered welcome/billing.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 107ms (Views: 105.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 20:09:56 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 89ms (Views: 87.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/welcome/vitals" for 54.244.95.60 at 2016-04-05 20:09:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#vitals as HTML
+  Rendered welcome/vitals.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 82ms (Views: 81.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-05 20:09:58 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 87ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/dashboard" for 54.244.95.60 at 2016-04-05 20:11:09 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#dashboard as HTML
+  Rendered welcome/dashboard.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 115ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/reports" for 54.244.95.60 at 2016-04-05 20:11:11 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#reports as HTML
+  Rendered welcome/reports.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 78ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/billing" for 54.244.95.60 at 2016-04-05 20:11:12 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#billing as HTML
+  Rendered welcome/billing.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 81ms (Views: 80.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 20:11:12 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 87ms (Views: 85.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/welcome/vitals" for 54.244.95.60 at 2016-04-05 20:11:13 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#vitals as HTML
+  Rendered welcome/vitals.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 110ms (Views: 109.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-05 20:11:14 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 80ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-05 20:22:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 373ms (Views: 364.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/reports" for 54.244.95.60 at 2016-04-05 20:23:01 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#reports as HTML
+  Rendered welcome/reports.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 44ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/dashboard" for 54.244.95.60 at 2016-04-05 20:23:02 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#dashboard as HTML
+  Rendered welcome/dashboard.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/billing" for 54.244.95.60 at 2016-04-05 20:23:03 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#billing as HTML
+  Rendered welcome/billing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 106ms (Views: 105.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 20:23:04 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 62ms (Views: 59.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 20:26:10 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 20:26:28 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 20:27:10 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vitals/1" for 54.244.95.60 at 2016-04-05 20:27:13 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVital Load (0.2ms)[0m  SELECT  "vitals".* FROM "vitals" WHERE "vitals"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered vitals/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 63ms (Views: 44.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vitals/1/edit" for 54.244.95.60 at 2016-04-05 20:27:16 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVital Load (0.1ms)[0m  [1mSELECT  "vitals".* FROM "vitals" WHERE "vitals"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered vitals/_form.html.erb (19.8ms)
+  Rendered vitals/edit.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 71ms (Views: 69.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 20:30:25 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals"
+  Rendered vitals/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 20:35:31 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals"[0m
+  Rendered vitals/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 20:51:34 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VitalsController#index as HTML
+  Rendered vitals/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `date_from' for nil:NilClass):
+    3: <h1>Listing Vitals</h1>
+    4:   <div class ="pull-right range-query">
+    5:     <%=form_tag vitals_path, method: :get do %>
+    6:       <%= text_field_tag 'search[date_from]', @search.date_from %>
+    7:       <%= text_field_tag 'search[date_to]', @search.date_to %>
+    8:       <submit_tag 'Search', class: 'btn search-button' %>
+    9:    <% end %>
+  app/views/vitals/index.html.erb:6:in `block in _app_views_vitals_index_html_erb___2867703556790075054_48329800'
+  app/views/vitals/index.html.erb:5:in `_app_views_vitals_index_html_erb___2867703556790075054_48329800'
+
+
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.6ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 20:53:23 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  Rendered vitals/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `date_from' for nil:NilClass):
+    3: <h1>Listing Vitals</h1>
+    4:   <div class ="pull-right range-query">
+    5:     <%=form_tag vitals_path, method: :get do %>
+    6:       <%= text_field_tag 'search[date_from]', @search.date_from %>
+    7:       <%= text_field_tag 'search[date_to]', @search.date_to %>
+    8:       <%=submit_tag 'Search', class: 'btn search-button' %>
+    9:    <% end %>
+  app/views/vitals/index.html.erb:6:in `block in _app_views_vitals_index_html_erb___2867703556790075054_47436120'
+  app/views/vitals/index.html.erb:5:in `_app_views_vitals_index_html_erb___2867703556790075054_47436120'
+
+
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.9ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 20:53:26 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  Rendered vitals/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `date_from' for nil:NilClass):
+    3: <h1>Listing Vitals</h1>
+    4:   <div class ="pull-right range-query">
+    5:     <%=form_tag vitals_path, method: :get do %>
+    6:       <%= text_field_tag 'search[date_from]', @search.date_from %>
+    7:       <%= text_field_tag 'search[date_to]', @search.date_to %>
+    8:       <%=submit_tag 'Search', class: 'btn search-button' %>
+    9:    <% end %>
+  app/views/vitals/index.html.erb:6:in `block in _app_views_vitals_index_html_erb___2867703556790075054_47436120'
+  app/views/vitals/index.html.erb:5:in `_app_views_vitals_index_html_erb___2867703556790075054_47436120'
+
+
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-05 21:11:28 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1600ms (Views: 1591.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 54.244.95.60 at 2016-04-05 21:11:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-e2f3d38c5e640befd495d9125c342dc8faffd6ac63e3e0d14b2759866ac5c095.css?body=1" for 54.244.95.60 at 2016-04-05 21:11:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vitals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.244.95.60 at 2016-04-05 21:11:31 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.244.95.60 at 2016-04-05 21:11:31 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/welcome/vitals" for 54.244.95.60 at 2016-04-05 21:11:38 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#vitals as HTML
+  Rendered welcome/vitals.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 21:11:39 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant VitalSearch::Invoice):
+  app/models/vital_search.rb:11:in `scope'
+  app/controllers/vitals_controller.rb:8:in `index'
+
+
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.1ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.8ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 21:11:40 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant VitalSearch::Invoice):
+  app/models/vital_search.rb:11:in `scope'
+  app/controllers/vitals_controller.rb:8:in `index'
+
+
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered .bundle/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.9ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 21:13:07 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.3ms)[0m  SELECT "vitals".* FROM "vitals" WHERE (date BETWEEN '2016-03-29' AND '2016-04-05')
+  Rendered vitals/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 122ms (Views: 115.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-05 21:13:18 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-05 21:26:00 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-05 21:26:11 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/dashboard" for 54.244.95.60 at 2016-04-05 21:26:13 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#dashboard as HTML
+  Rendered welcome/dashboard.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/reports" for 54.244.95.60 at 2016-04-05 21:26:14 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#reports as HTML
+  Rendered welcome/reports.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/billing" for 54.244.95.60 at 2016-04-05 21:26:15 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#billing as HTML
+  Rendered welcome/billing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 21:26:15 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals" WHERE (date BETWEEN '2016-03-29' AND '2016-04-05')[0m
+  Rendered vitals/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 52ms (Views: 49.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 21:32:44 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals" WHERE (date BETWEEN '2016-03-29' AND '2016-04-05')
+  Rendered vitals/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 281ms (Views: 269.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vitals/new" for 54.244.95.60 at 2016-04-05 21:32:47 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#new as HTML
+  Rendered vitals/_form.html.erb (16.3ms)
+  Rendered vitals/new.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 61ms (Views: 56.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/vitals" for 54.244.95.60 at 2016-04-05 21:32:53 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BjKqIUC4WCUb4t3R5QVzLbn3mmdNFtm9JDqpEqX3x9jY9P/ChIzq0ef/qwOHCMVyVZmbrteY/S561r/rHw+1YQ==", "vital"=>{"date(1i)"=>"2016", "date(2i)"=>"4", "date(3i)"=>"5", "date(4i)"=>"21", "date(5i)"=>"32", "Patient_ID"=>"123456"}, "commit"=>"Create Vital"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "vitals" ("Patient_ID", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["Patient_ID", 123456], ["date", "2016-04-05 21:32:00.000000"], ["created_at", "2016-04-05 21:32:53.536155"], ["updated_at", "2016-04-05 21:32:53.536155"]]
+  [1m[36m (5.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://patient-portal-169537.nitrousapp.com:3000/vitals/3
+Completed 302 Found in 14ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/vitals/3" for 54.244.95.60 at 2016-04-05 21:32:53 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mVital Load (0.2ms)[0m  SELECT  "vitals".* FROM "vitals" WHERE "vitals"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered vitals/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 48ms (Views: 41.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 21:32:56 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals" WHERE (date BETWEEN '2016-03-29' AND '2016-04-05')[0m
+  Rendered vitals/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 42ms (Views: 39.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 21:33:01 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals" WHERE (date BETWEEN '2016-03-29' AND '2016-04-05')
+  Rendered vitals/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/welcome/billing" for 54.244.95.60 at 2016-04-05 21:33:02 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#billing as HTML
+  Rendered welcome/billing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/reports" for 54.244.95.60 at 2016-04-05 21:33:04 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#reports as HTML
+  Rendered welcome/reports.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/dashboard" for 54.244.95.60 at 2016-04-05 21:33:04 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#dashboard as HTML
+  Rendered welcome/dashboard.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-05 21:33:05 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/vitals" for 54.244.95.60 at 2016-04-05 21:33:06 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#vitals as HTML
+  Rendered welcome/vitals.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 21:33:07 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT "vitals".* FROM "vitals" WHERE (date BETWEEN '2016-03-29' AND '2016-04-05')[0m
+  Rendered vitals/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-05 21:59:31 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 264ms (Views: 255.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-05 21:59:36 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/dashboard" for 54.244.95.60 at 2016-04-05 21:59:37 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#dashboard as HTML
+  Rendered welcome/dashboard.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/reports" for 54.244.95.60 at 2016-04-05 21:59:38 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#reports as HTML
+  Rendered welcome/reports.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/billing" for 54.244.95.60 at 2016-04-05 21:59:39 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#billing as HTML
+  Rendered welcome/billing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 37ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-05 21:59:39 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals" WHERE (date BETWEEN '2016-03-29' AND '2016-04-05')
+  Rendered vitals/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 41ms (Views: 36.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-12 15:25:55 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 306ms (Views: 297.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-06847503fad0eb9e42b509018e31578f6ce9e8f80dfb9dfa6164856e8b1aa760.css?body=1" for 54.244.95.60 at 2016-04-12 15:25:56 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:56 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:56 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-transition.self-1f404046c677611b4c53fe8c7fa375d263aee3a2e3ffd10b6de609ce1fbb14ba.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:56 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-affix.self-fc2adbfd50a5e179d9c5978e92781e874d5629a6e86a14352eca21e8f35bd2c7.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:56 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-alert.self-6fd0b0097e1b5d807a9e59c8914e00f1c80d64b6f5f5ad8f5c8f4bd5257d1233.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:56 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-button.self-ec411ad9c9efa6f321b7d40f49ded5349beeb3d162fa38da764d243b33256cce.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-carousel.self-a2a874da9eec4567e474650e78025b2557ca25bfe3c9823bf4f8bfadb8d1b870.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-collapse.self-743f780936abb3ae4b4afb385273dd40a091a71f8b869e96427ed340ddc49fb5.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-dropdown.self-1ed8d6c365f72e9d378331aeb03097eea0bf443bb4e18b4bd551e3a04e1bbc82.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-modal.self-31563e9d22c6c441c4bd6d53381d89710560a9b96356df8f2413198633d61b2b.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-scrollspy.self-d7e7f43bd32db50108215b2da1b78229443295e36ed5e560901dac95a9aa0b2d.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-tab.self-14b70f6c51272602f1c58e8b0fd4783c2123d72db8de2b0aa298e7789617130e.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-tooltip.self-4372bd57b77c95c5ae140f68af0454eba315e71e9da19cfad68ba59007280645.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-popover.self-d7bc00218b830918f1d254a9b7a83155f0850728d6eca92ad2cad148136b556c.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-typeahead.self-886a9d8ef78798bccff815f846e02a82df9846e3cc3d3383f98705df4e404357.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vitals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 54.244.95.60 at 2016-04-12 15:25:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-12 15:26:00 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/dashboard" for 54.244.95.60 at 2016-04-12 15:26:01 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#dashboard as HTML
+  Rendered welcome/dashboard.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/billing" for 54.244.95.60 at 2016-04-12 15:26:02 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#billing as HTML
+  Rendered welcome/billing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-12 15:26:02 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals" WHERE (date BETWEEN '2016-04-05' AND '2016-04-12')
+  Rendered vitals/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 54ms (Views: 49.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-12 17:32:41 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 352ms (Views: 342.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-06847503fad0eb9e42b509018e31578f6ce9e8f80dfb9dfa6164856e8b1aa760.css?body=1" for 54.244.95.60 at 2016-04-12 17:32:42 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 54.244.95.60 at 2016-04-12 17:32:42 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.244.95.60 at 2016-04-12 17:32:42 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vitals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.244.95.60 at 2016-04-12 17:32:42 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 54.244.95.60 at 2016-04-12 17:32:42 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/welcome/reports" for 54.244.95.60 at 2016-04-12 17:32:44 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#reports as HTML
+  Rendered welcome/reports.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 70ms (Views: 69.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/billing" for 54.244.95.60 at 2016-04-12 17:32:45 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#billing as HTML
+  Rendered welcome/billing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-12 17:32:46 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals" WHERE (date BETWEEN '2016-04-05' AND '2016-04-12')
+  Rendered vitals/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 59ms (Views: 53.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/welcome/vitals" for 54.244.95.60 at 2016-04-12 17:32:46 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#vitals as HTML
+  Rendered welcome/vitals.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-12 17:32:48 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 54ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-04-12 17:42:52 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 265ms (Views: 256.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vitals" for 54.244.95.60 at 2016-04-12 17:42:55 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#index as HTML
+  [1m[35mVital Load (0.2ms)[0m  SELECT "vitals".* FROM "vitals" WHERE (date BETWEEN '2016-04-05' AND '2016-04-12')
+  Rendered vitals/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 54ms (Views: 49.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vitals/3" for 54.244.95.60 at 2016-04-12 17:43:01 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VitalsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mVital Load (0.2ms)[0m  [1mSELECT  "vitals".* FROM "vitals" WHERE "vitals"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered vitals/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 87ms (Views: 78.7ms | ActiveRecord: 0.2ms)
