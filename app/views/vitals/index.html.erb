@@ -15,7 +15,7 @@
           <tbody>
             <% @vitals.each do |vital| %>
               <tr>
-                <td><%= vital.date %></td>
+                <td><%= vital.date.strftime["%m/%d/%Y"] %></td>
                 <td><%= vital.Patient_ID %></td>
                 <td><%= vital.Vital_Value %></td>
                 <td><%= link_to 'Show', vital,class: 'btn btn-mini' %></td>
