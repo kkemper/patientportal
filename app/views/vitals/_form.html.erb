@@ -26,6 +26,22 @@
                 </div>
         </div>
   
+  
+    <div class="control-group">
+          <%= f.label :"Vital-Type",class:'control-label' %><br>
+               <div class ="controls">
+              <%= f.select( :vital_type,options_for_select([['Blood-Pressure','Blood-Pressure'],['Blood-Sugar','Blood-Sugar'],['Weight','Weight']['Heartbeat','Heartbeat']])) %>
+                </div>
+        </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <div class="control-group">
           <%= f.label :Vital_Value,class:'control-label' %><br>
                <div class ="controls">
