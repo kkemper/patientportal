@@ -4,7 +4,8 @@ class VitalsController < ApplicationController
   # GET /vitals
   # GET /vitals.json
   def index
-    @vitals = Vital.all
+    @search = VitalSearch.new(params[:search])
+    @vitals = @search.scope
   end
 
   # GET /vitals/1
