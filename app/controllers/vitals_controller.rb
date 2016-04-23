@@ -57,7 +57,7 @@ class VitalsController < ApplicationController
   def destroy
     @vital.destroy
     respond_to do |format|
-      format.html { redirect_to vitals_url, notice: 'Vital was successfully destroyed.' }
+      format.html { redirect_to vitals_url, notice: 'Vital was successfully deleted.' }
       format.json { head :no_content }
     end
   end
@@ -70,6 +70,6 @@ class VitalsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def vital_params
-      params.require(:vital).permit(:date, :Patient_ID, :vital_type, :Vital_Value)
+      params.require(:vital).permit(:date, :Patient_ID, :vital_type, :Vital_Value, :physician_id)
     end
 end

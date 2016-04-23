@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :physicians
+  resources :physicians
+  resources :physicians
+  resources :physicians
   resources :vitals
   devise_for :users
   get 'welcome/home'
