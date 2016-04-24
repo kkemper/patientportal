@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :physicians
   resources :physicians
   resources :vitals
-  devise_for :users
+  devise_for :users, :controllers => { registrations: 'registrations' }
   get 'welcome/home'
 
   get 'welcome/dashboard'
@@ -17,4 +17,5 @@ Rails.application.routes.draw do
 
   resources :vitals
   root to: 'welcome#home'
+  
 end
