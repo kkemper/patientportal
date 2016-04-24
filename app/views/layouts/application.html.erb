@@ -11,19 +11,48 @@
     <ul class="nav nav-tabs">
 
    <li> <%= link_to "Home", root_path %> </li>
+   <li> <%= link_to "Sign Up", new_user_registration_path %> </li>
+   <li> <%= link_to "Sign In", new_user_session_path %> </li>
+<!--      To be deleted -->
    <li> <%= link_to "Dashboard", welcome_dashboard_path %> </li>
    <li> <%= link_to "Reports", welcome_reports_path %> </li>
    <li> <%= link_to "Billing", welcome_billing_path %> </li>
-   <li> <%= link_to "Vitals", vitals_path %> </li>
-    <% if current_user %>
-    
-     <li> <%= link_to "Sign Out", destroy_user_session_path,method: :delete %> </li>
-    <% else %>
-    <li> <%= link_to "Sign Up", new_user_registration_path %> </li>
-    <li> <%= link_to "Sign In", new_user_session_path %> </li>
+   <li><%= link_to "Vitals",vitals_path %></li>
+      
+           <div class='btn-group pull-right right-nav'>
+     <button type="button" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Admin</span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><%= link_to "Physician",physicians_path %></li>
+        </ul>
+      </div>
+<!--       Till Here -->
+   <% if current_user %>
+      <li> <%= link_to "Sign Out", destroy_user_session_path,method: :delete %> </li>
+      <div class="container">
+      <ul class="nav nav-tabs">
+          <li> <%= link_to "Home", root_path %> </li>
+          <li> <%= link_to "Dashboard", welcome_dashboard_path %> </li>
+          <li> <%= link_to "Reports", welcome_reports_path %> </li>
+          <li> <%= link_to "Billing", welcome_billing_path %> </li>
+          <li><%= link_to "Vitals",vitals_path %></li>
+      </ul>
+      </div>
+      
+     <div class='btn-group pull-right right-nav'>
+     <button type="button" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Admin</span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><%= link_to "Physician",physicians_path %></li>
+        </ul>
+      </div>
     <% end %>
-
-  </ul>
+        </ul>
+  
   <%if flash[:notice] %>
     <div class="alert alert-success">
       <button type="button" class="close" data-dismiss="alert">&times;</button>
