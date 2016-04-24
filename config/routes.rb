@@ -18,8 +18,5 @@ Rails.application.routes.draw do
   resources :vitals
   root to: 'welcome#home'
   
-<<<<<<< HEAD
-=======
-  devise_for :users, :controllers => { registrations: 'registrations' }
->>>>>>> 4c8f1cd186a50702b5f449466e2bf60820c021eb
+
 end
