@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160423202504) do
+ActiveRecord::Schema.define(version: 20160424150152) do
+
+  create_table "dashboards", force: :cascade do |t|
+    t.string   "Patient_Name"
+    t.date     "Last_Visit"
+    t.string   "Attending_Physician"
+    t.string   "Reason_for_visit"
+    t.string   "Follow_up_required"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+  end
 
   create_table "physicians", force: :cascade do |t|
     t.string   "name"
@@ -36,6 +46,8 @@ ActiveRecord::Schema.define(version: 20160423202504) do
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
     t.string   "unconfirmed_email"
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
