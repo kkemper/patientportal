@@ -43,7 +43,7 @@
   <div class="control-group">
     <%= f.label :Doctor ,class:'control-label' %><br>
     <div class ="controls">
-      <%= collection_select( :vitals,  :physician_id,  Physician.all, :id, :name, {}, { :multiple => false} )%>
+      <%= collection_select( :vital,  :physician_id,  Physician.all, :id, :name, {}, { :multiple => false } )%>
     </div>
 </div>
   
