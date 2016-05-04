@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :reports
+  resources :billings
   resources :physicians
   resources :physicians
   resources :physicians
@@ -11,7 +13,7 @@ Rails.application.routes.draw do
 
   get 'welcome/reports'
 
-  get 'welcome/billing'
+  get 'welcome/billing' 
 
   get 'welcome/vitals'
 

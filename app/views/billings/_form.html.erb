@@ -1,0 +1,47 @@
+<%= form_for(@billing) do |f| %>
+  <% if @billing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@billing.errors.count, "error") %> prohibited this billing from being saved:</h2>
+
+      <ul>
+      <% @billing.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :Date ,class:'control-label'%><br>
+    <div class ="controls">
+    <%= f.datetime_select :Date %>
+  </div>
+</div>
+
+  <div class="control-group">
+    <%= f.label :Reason ,class:'control-label'%><br>
+    <div class ="controls">
+    <%= f.text_field :Reason %>
+  </div>
+</div>
+
+  <div class="control-group">
+    <%= f.label :Hospital,class:'control-label' %><br>
+    <div class ="controls">
+    <%= f.text_field :Hospital %>
+  </div>
+</div>
+
+  <div class="control-group">
+    <%= f.label :Status ,class:'control-label'%><br>
+    <div class ="controls">
+    <%= f.select(:Status,options_for_select([['Paid','Paid'],['Pending','Pending']]),{include_blank:true}) %>
+  </div>
+</div>
+
+ <div class="control-group">
+   <div class ="controls">
+     <%= f.submit 'Submit',class: 'btn btn-default' %>
+   </div>
+  </div>
+<% end %>
